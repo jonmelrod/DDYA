@@ -1,9 +1,6 @@
-# Welcome to GitHub Desktop!
-#prueba diagnostico DDYA - Jonathan Audic Melendez Rodriguez
-
-This is your README. READMEs are where you can communicate what your project is and how to use it.
-
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+DDYA
+--SEMANA_1
+----prueba_tecnica.py
 
 def signo(m):
     if m > 0:
