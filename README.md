@@ -1,6 +1,5 @@
-DDYA
---SEMANA_1
-----prueba_tecnica.py
+#prueba diagnostico DDYA - Jonathan Audic Melendez Rodriguez
+
 
 def signo(m):
     if m > 0:
