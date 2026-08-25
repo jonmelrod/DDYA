@@ -1,1 +1,1 @@
-Semana-1: Aquí están incluidas los trabajos realizados por Jonathan Meléndez de la semana 1.
+Hola, soy Jonathan Meléndez y este es mi repositorio donde el cual publicare mis trabajos asignados a la materia de DDYA. Bienvendios
