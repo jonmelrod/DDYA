@@ -1,0 +1,56 @@
+def merge_sort(lista):
+    if len(lista) <= 1:
+        return lista
+
+    mitad = len(lista) // 2
+
+    izquierda = merge_sort(lista[:mitad])
+    derecha = merge_sort(lista[mitad:])
+
+    return merge(izquierda, derecha)
+
+
+def merge(izquierda, derecha):
+    ordenada = []
+
+    while izquierda and derecha:
+        if izquierda[0] < derecha[0]:
+            ordenada.append(izquierda.pop(0))
+        else:
+            ordenada.append(derecha.pop(0))
+
+    return ordenada + izquierda + derecha
+def busqueda_binaria(lista, objetivo):
+    izquierda = 0
+    derecha = len(lista) - 1
+
+    while izquierda <= derecha:
+        medio = (izquierda + derecha) // 2
+
+        if lista[medio] == objetivo:
+            return medio
+        elif lista[medio] < objetivo:
+            izquierda = medio + 1
+        else:
+            derecha = medio - 1
+
+    return -1
+
+
+def main():
+    entrada = input("Ingrese numeros separados por espacios: ")
+    lista = []
+
+    for numero in entrada.split():
+        lista.append(int(numero))
+
+    print("Lista original:", lista)
+    print("Lista ordenada:", merge_sort(lista))
+
+    objetivo = int(input("Ingrese el numero a buscar: "))
+    indice = busqueda_binaria(merge_sort(lista), objetivo)
+    if indice != -1:
+        print(f"El numero {objetivo} se encuentra en la posicion {indice}.")
+    else:
+        print(f"El numero {objetivo} no se encuentra en la lista.")
+main()
