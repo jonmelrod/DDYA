@@ -1,0 +1,61 @@
+#Mercado
+#Menor a mayor y Mayor a menor
+
+def asce(lista, l):
+    lista =[]
+    s = 0
+    while s < l:
+        ask = input("Ingrese el precio: ")
+        for n in ask.split(","):
+            lista.append(int(n))
+        s += 1
+    for i in range(1, len(lista)):
+        clave = lista[i]
+        j = i - 1
+        while j >= 0 and lista[j] > clave:
+            lista[j + 1] = lista[j]
+            j -= 1
+
+        lista[j + 1] = clave
+
+    print("La secuencia ordenada de menor a mayor es:", lista)
+    return lista
+
+def desce(lista, l):
+    lista =[]
+    s = 0
+    while s < l:
+        ask = input("Ingrese el precio: ")
+        for n in ask.split(","):
+            lista.append(int(n))
+        s += 1
+    for i in range(1, len(lista)):
+        clave = lista[i]
+        j = i - 1
+
+        while j >= 0 and lista[j] < clave:
+            lista[j + 1] = lista[j]
+            j -= 1
+
+        lista[j + 1] = clave
+
+    print("La secuencia ordenada de mayor a menor es:", lista)
+    return lista
+
+
+
+
+def main():
+    l = int(input("Ingrese cuantos precios va a ingresar: "))
+    lista = []
+
+    n = input("desea ascendente (asce) o descente (desce): ")
+    if n == "asce":
+        lista = asce(lista, l)
+        
+    elif n == "desce":  
+        lista = desce(lista,l)
+
+
+
+main()
