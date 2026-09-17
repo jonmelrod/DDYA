@@ -24,7 +24,11 @@ La idea es mantener un registro organizado de mi progreso y de los diferentes co
 
 ## 🧩 ¿Qué encontrarás aquí?
 
-Cada laboratorio busca poner en práctica los conceptos vistos en clase.
+Cada laboratorio busca poner en práctica los conceptos vistos en clase:
+Laboratorio semana 7:
+-Elaboración de un programa como herramienta para una tienda, con el objetivo de organizar de manera eficiente la entrada y atendida de clientes, también con los productos ingresados a la tienda.
+Laboratorio semana 8:
+-Elaboración de un programa que usa de manera lógica e ideal los arboles de búsqueda (BST) y los arboles AVL, para una empresa, con el objetivo de buscar productos por su código en una lista para la cual ingresaron aleatoriamente.
 
 ---
 
