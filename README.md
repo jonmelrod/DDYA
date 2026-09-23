@@ -33,6 +33,7 @@ Laboratorio semana 7:
 Laboratorio semana 8:
 
 -Elaboración de un programa que usa de manera lógica e ideal los arboles de búsqueda (BST) y los arboles AVL, para una empresa, con el objetivo de buscar productos por su código en una lista para la cual ingresaron aleatoriamente.
+
 ---
 
 ## 🎯 Objetivo
